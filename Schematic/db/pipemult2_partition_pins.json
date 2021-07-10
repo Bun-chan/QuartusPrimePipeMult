@@ -8,67 +8,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "q[0]",
+					"name" : "ALUout[15]",
 					"strict" : false
 				},
 				{
-					"name" : "q[1]",
+					"name" : "ALUout[14]",
 					"strict" : false
 				},
 				{
-					"name" : "q[2]",
+					"name" : "ALUout[13]",
 					"strict" : false
 				},
 				{
-					"name" : "q[3]",
+					"name" : "ALUout[12]",
 					"strict" : false
 				},
 				{
-					"name" : "q[4]",
+					"name" : "ALUout[11]",
 					"strict" : false
 				},
 				{
-					"name" : "q[5]",
+					"name" : "ALUout[10]",
 					"strict" : false
 				},
 				{
-					"name" : "q[6]",
+					"name" : "ALUout[9]",
 					"strict" : false
 				},
 				{
-					"name" : "q[7]",
+					"name" : "ALUout[8]",
 					"strict" : false
 				},
 				{
-					"name" : "q[8]",
+					"name" : "ALUout[7]",
 					"strict" : false
 				},
 				{
-					"name" : "q[9]",
+					"name" : "ALUout[6]",
 					"strict" : false
 				},
 				{
-					"name" : "q[10]",
+					"name" : "ALUout[5]",
 					"strict" : false
 				},
 				{
-					"name" : "q[11]",
+					"name" : "ALUout[4]",
 					"strict" : false
 				},
 				{
-					"name" : "q[12]",
+					"name" : "ALUout[3]",
 					"strict" : false
 				},
 				{
-					"name" : "q[13]",
+					"name" : "ALUout[2]",
 					"strict" : false
 				},
 				{
-					"name" : "q[14]",
+					"name" : "ALUout[1]",
 					"strict" : false
 				},
 				{
-					"name" : "q[15]",
+					"name" : "ALUout[0]",
 					"strict" : false
 				},
 				{
@@ -197,6 +197,94 @@
 				},
 				{
 					"name" : "Sum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CCout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CCout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CCout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CCout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CCout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CCout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q[15]",
+					"strict" : false
+				},
+				{
+					"name" : "q[14]",
+					"strict" : false
+				},
+				{
+					"name" : "q[13]",
+					"strict" : false
+				},
+				{
+					"name" : "q[12]",
+					"strict" : false
+				},
+				{
+					"name" : "q[11]",
+					"strict" : false
+				},
+				{
+					"name" : "q[10]",
+					"strict" : false
+				},
+				{
+					"name" : "q[9]",
+					"strict" : false
+				},
+				{
+					"name" : "q[8]",
+					"strict" : false
+				},
+				{
+					"name" : "q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q[0]",
 					"strict" : false
 				},
 				{
@@ -460,7 +548,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
 					"name" : "clk1",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
 					"strict" : false
 				},
 				{

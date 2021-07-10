@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Jul 10 12:36:19 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : pipemult2
+Top-level Entity Name : pipemult
+Family : MAX 10
+Total logic elements : 101
+    Total combinational functions : 80
+    Dedicated logic registers : 21
+Total registers : 21
+Total pins : 142
+Total virtual pins : 0
+Total memory bits : 512
+Embedded Multiplier 9-bit elements : 1
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

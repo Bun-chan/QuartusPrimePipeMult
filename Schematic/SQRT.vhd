@@ -43,6 +43,7 @@ USE altera_mf.all;
 ENTITY SQRT IS
 	PORT
 	(
+		clk		: IN STD_LOGIC ;
 		radical		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		q		: OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
 		remainder		: OUT STD_LOGIC_VECTOR (16 DOWNTO 0)
@@ -66,6 +67,7 @@ ARCHITECTURE SYN OF sqrt IS
 		lpm_type		: STRING
 	);
 	PORT (
+			clk	: IN STD_LOGIC ;
 			radical	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 			q	: OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
 			remainder	: OUT STD_LOGIC_VECTOR (16 DOWNTO 0)
@@ -78,13 +80,14 @@ BEGIN
 
 	ALTSQRT_component : ALTSQRT
 	GENERIC MAP (
-		pipeline => 0,
+		pipeline => 8,
 		q_port_width => 16,
 		r_port_width => 17,
 		width => 32,
 		lpm_type => "ALTSQRT"
 	)
 	PORT MAP (
+		clk => clk,
 		radical => radical,
 		q => sub_wire0,
 		remainder => sub_wire1
@@ -100,13 +103,15 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "MAX 10"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
--- Retrieval info: CONSTANT: PIPELINE NUMERIC "0"
+-- Retrieval info: CONSTANT: PIPELINE NUMERIC "8"
 -- Retrieval info: CONSTANT: Q_PORT_WIDTH NUMERIC "16"
 -- Retrieval info: CONSTANT: R_PORT_WIDTH NUMERIC "17"
 -- Retrieval info: CONSTANT: WIDTH NUMERIC "32"
+-- Retrieval info: USED_PORT: clk 0 0 0 0 INPUT NODEFVAL "clk"
 -- Retrieval info: USED_PORT: q 0 0 16 0 OUTPUT NODEFVAL "q[15..0]"
 -- Retrieval info: USED_PORT: radical 0 0 32 0 INPUT NODEFVAL "radical[31..0]"
 -- Retrieval info: USED_PORT: remainder 0 0 17 0 OUTPUT NODEFVAL "remainder[16..0]"
+-- Retrieval info: CONNECT: @clk 0 0 0 0 clk 0 0 0 0
 -- Retrieval info: CONNECT: @radical 0 0 32 0 radical 0 0 32 0
 -- Retrieval info: CONNECT: q 0 0 16 0 @q 0 0 16 0
 -- Retrieval info: CONNECT: remainder 0 0 17 0 @remainder 0 0 17 0

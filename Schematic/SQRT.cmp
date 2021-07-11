@@ -17,6 +17,7 @@
 component SQRT
 	PORT
 	(
+		clk		: IN STD_LOGIC ;
 		radical		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		q		: OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
 		remainder		: OUT STD_LOGIC_VECTOR (16 DOWNTO 0)

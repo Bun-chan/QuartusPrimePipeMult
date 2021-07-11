@@ -1,5 +1,5 @@
 Flow report for pipemult2
-Sun Jul 11 13:33:58 2021
+Mon Jul 12 06:00:00 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jul 11 13:33:58 2021       ;
+; Flow Status                        ; Successful - Mon Jul 12 06:00:00 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; pipemult2                                   ;
 ; Top-level Entity Name              ; pipemult                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08DAF484C8GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 567 / 8,064 ( 7 % )                         ;
-;     Total combinational functions  ; 523 / 8,064 ( 6 % )                         ;
-;     Dedicated logic registers      ; 275 / 8,064 ( 3 % )                         ;
-; Total registers                    ; 281                                         ;
+; Total logic elements               ; 727                                         ;
+;     Total combinational functions  ; 526 / 8,064 ( 7 % )                         ;
+;     Dedicated logic registers      ; 297 / 8,064 ( 4 % )                         ;
+; Total registers                    ; 297                                         ;
 ; Total pins                         ; 167 / 250 ( 67 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 512 / 387,072 ( < 1 % )                     ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/11/2021 13:33:09 ;
+; Start date & time ; 07/12/2021 05:56:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipemult2           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 194042949445197.162597798902660        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 194042949445197.162603697517092        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -107,44 +107,35 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4874 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:26     ; 1.1                     ; 5701 MB             ; 00:00:33                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4686 MB             ; 00:00:01                           ;
-; Power Analyzer       ; 00:00:03     ; 1.3                     ; 4859 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.4                     ; 4817 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
-; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:03                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:00:10     ; 1.0                     ; 4876 MB             ; 00:00:19                           ;
+; I/O Assignment Analysis ; 00:00:02     ; 1.0                     ; 4926 MB             ; 00:00:02                           ;
+; I/O Assignment Analysis ; 00:00:02     ; 1.0                     ; 4930 MB             ; 00:00:02                           ;
+; Total                   ; 00:00:14     ; --                      ; --                  ; 00:00:23                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Power Analyzer       ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++---------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                       ;
++-------------------------+------------------+------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis    ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
+; I/O Assignment Analysis ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
+; I/O Assignment Analysis ; DESKTOP-33QK3L3  ; Windows 10 ; 10.0       ; x86_64         ;
++-------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off pipemult -c pipemult2
-quartus_fit --read_settings_files=off --write_settings_files=off pipemult -c pipemult2
-quartus_asm --read_settings_files=off --write_settings_files=off pipemult -c pipemult2
-quartus_pow --read_settings_files=off --write_settings_files=off pipemult -c pipemult2
-quartus_sta pipemult -c pipemult2
-quartus_eda --read_settings_files=off --write_settings_files=off pipemult -c pipemult2
+quartus_fit --read_settings_files=off --write_settings_files=off pipemult -c pipemult2 --plan
+quartus_fit --read_settings_files=on --write_settings_files=off pipemult -c pipemult2 --plan
 
 
 

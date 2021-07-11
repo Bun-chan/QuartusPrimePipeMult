@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipemult2
-Sun Jul 11 13:33:20 2021
+Mon Jul 12 05:56:24 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -92,7 +92,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 11 13:33:20 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 12 05:56:24 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; pipemult2                                   ;
 ; Top-level Entity Name              ; pipemult                                    ;
@@ -1099,7 +1099,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Jul 11 13:33:09 2021
+    Info: Processing started: Mon Jul 12 05:56:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipemult -c pipemult2
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1357,7 +1357,7 @@ Info (128002): Starting physical synthesis algorithm register retiming
 Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 658 ps
 Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
 Info (128003): Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
-Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:00
+Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:01
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 916 device resources after synthesis - the final resource count might be different
@@ -1367,9 +1367,9 @@ Info (21057): Implemented 916 device resources after synthesis - the final resou
     Info (21064): Implemented 16 RAM segments
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Sun Jul 11 13:33:20 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Mon Jul 12 05:56:24 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 
